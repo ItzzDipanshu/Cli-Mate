@@ -3,7 +3,7 @@ const apiKey = `a245db8684dc638c7145426200da99c2`;
 const searchBtn = document.querySelector("#searchBtn");
 
 const fetchCitySuggestions = async () => {
-  const api = `http://api.openweathermap.org/geo/1.0/direct?q=`;
+  const api = `https://api.openweathermap.org/geo/1.0/direct?q=`;
   const input = document.querySelector("#search-input").value.trim();
   const suggestionList = document.querySelector(".citySuggestions");
 
@@ -102,14 +102,14 @@ const checkWeather = async (city) => {
   const lat = data.coord.lat;
   const lon =  data.coord.lon;
 
-  fourDaysForecast(lat, lon);
+  fiveDaysForecast(lat, lon);
 
 
 
 };
 
-const fourDaysForecast = async(lat, lon)=>{
-    const apiURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
+const fiveDaysForecast = async(lat, lon)=>{
+    const apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
 
 
     const btns = document.querySelectorAll(".btn");
