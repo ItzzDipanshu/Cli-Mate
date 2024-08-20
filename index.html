@@ -2,116 +2,134 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cli-Mate</title>
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
     <div class="w-full bg-black text-white">
-        <div class="w-full h-screen">
-            <div class="relative bgImage w-full h-[20%] sm:h-[40%] overflow-hidden">
-                <img class="w-full h-full object-cover" src="/images/imageBG.jpg" alt="">
-                <div class="absolute top-0 w-full pt-5 sm:pt-10 text-center">
-                    <h1 class="text-white text-4xl sm:text-9xl">Cli-Mate </h1>
-                    <p class="text-white text-sm w-[80%] mx-auto sm:w-[100%] sm:text-2xl mt-4 sm:mt-10">Your go-to app for accurate, real-time weather updates.</p>
-                </div>
-            </div>
-            <div class="w-full sm:w-[70%] mx-auto px-2 py-5">
-                <input class="border-none bg-zinc-500 text-white placeholder-white outline-none w-[70%] sm:w-[50%] px-2 py-1 rounded" type="text" placeholder="Search City">
-                <button class="px-2 py-1 border border-zinc-500 rounded text-white">Search</button>
-            </div>
-            <div class=" sm:w-[70%] h-[60%] sm:h-[45%] mx-auto px-2 flex flex-col overflow-y-auto sm:flex-row gap-5">
-                <div class="todaysForcast h-full w-[full] sm:w-[50%] sm:py-3">
-                    <h4 class="text-zinc-400">Aug 18, 01:14pm</h4>
-                    <h1 class="text-3xl sm:text-5xl">Nagaur, In</h1>
-                    <div class="w-full flex items-center justify-start mt-4">
-                        <img class="w-14" src="/images/clear.png" alt="">
-                        <span>34°C</span>
-                    </div>
-                    <div class="sm:text-xl flex gap-2">
-                        <h4>Feels like 38°C.</h4>
-                        <h4>Broken Clouds.</h4>
-                        <h4>Moderate breeze.</h4>
-                    </div>
-                    <div class="flex gap-5 mt-5 sm:text-lg">
-                        <div>
-                            <h4>5.7m/s SW</h4>
-                            <h4>Humidity: 48%</h4>
-                            <h4>Dew point: 22°C</h4>
-                        </div>
-                        <div>
-                            <h4>1005hPa</h4>
-                            <h4>UV: 11</h4>
-                            <h4>Visibility: 10.0km</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="fourDaysForcast h-full w-full sm:w-[50%]">
-                    <h1 class="text-2xl font-semibold">8-day Forecast</h1>
-                    <div class="sm:w-[95%] bg-zinc-500 mt-5 px-4 py-2 flex items-center justify-around rounded">
-                        <h1 class="cursor-pointer">Sun, Aug 18</h1>
-                        <h1 class="cursor-pointer">Sun, Aug 18</h1>
-                        <h1 class="cursor-pointer">Sun, Aug 18</h1>
-                        <h1 class="cursor-pointer">Sun, Aug 18</h1>
-                    </div>
-                    <div class="flex items-center gap-2 mt-5">
-                        <img class="w-14" src="/images/clear.png" alt="">
-                        <div>
-                            <div class="flex gap-2">
-                                <h1>Broken Clouds.</h1>
-                                <h1>Moredrate breeze.</h1>
-                            </div>
-                            <h2>The high will be 34°C, the low will be 27°C.</h2>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex gap-10">
-                            <h1>0%</h1>
-                            <h1>6.2m/s SSW</h1>
-                            <h1>1005hPa</h1>
-                        </div>
-                        <div class="flex gap-5">
-                            <h1>Humidity: 51%</h1>
-                            <h1>UV: 11</h1>
-                            <h1>Dew point: 22°C</h1>
-                        </div>
-                    </div>
-                    <div class="w-full overflow-x-auto flex flex-row mt-3 gap-5 pb-1">
-                        <div class="flex flex-col justify-end">
-                            <h1 class="font-bold">Temprature</h1>
-                            <h1 class="font-bold">Feels Like</h1>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="font-bold">Morning</h1>
-                            <h1> 27°C</h1>
-                            <h1> 27°C</h1>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="font-bold">Afternoon</h1>
-                            <h1> 27°C</h1>
-                            <h1> 27°C</h1>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="font-bold">Evening</h1>
-                            <h1> 27°C</h1>
-                            <h1> 27°C</h1>
-                        </div>
-                        <div class="flex flex-col">
-                            <h1 class="font-bold">Night</h1>
-                            <h1> 27°C</h1>
-                            <h1> 27°C</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="w-full h-screen">
+        <div class="relative bgImage w-full h-[20%] sm:h-[40%] overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="/images/imageBG.jpg"
+            alt=""
+          />
+          <div class="absolute top-0 w-full pt-5 sm:pt-10 text-center">
+            <h1 class="text-white text-4xl sm:text-9xl">Cli-Mate</h1>
+            <p
+              class="text-white text-sm w-[80%] mx-auto sm:w-[100%] sm:text-2xl mt-4 sm:mt-10"
+            >
+              Your go-to app for accurate, real-time weather updates.
+            </p>
+          </div>
         </div>
+        <div class="relative w-full sm:w-[70%] mx-auto px-2 py-5">
+          <input
+            id="search-input"
+            class="border-none bg-zinc-500 text-white placeholder-white outline-none w-[70%] sm:w-[50%] px-2 py-1 rounded"
+            type="text"
+            placeholder="Search City"
+            oninput=fetchCitySuggestions()
+          />
+          <button id="searchBtn"  class="px-2 py-1 border border-zinc-500 rounded text-white" onclick=btnClick()>
+            Search
+          </button>
+          <div class="citySuggestions z-[999] absolute top-[100%] left-0 w-[65%] sm:w-[50%] max-h-[15vh] bg-zinc-500 text-white mx-2 rounded overflow-y-auto mt-[-20px] cursor-pointer">
+            
+          </div>
+        </div>
+        <div
+          class="sm:w-[70%] h-[60%] sm:h-[45%] mx-auto px-2 flex flex-col overflow-y-auto sm:flex-row gap-5"
+        >
+          <div class="todaysForcast h-full w-[full] sm:w-[50%] sm:py-3">
+            <h4 id="current-date" class="text-zinc-400"></h4>
+            <h1 id="cityName" class="text-3xl sm:text-5xl">Nagaur, In</h1>
+            <div class="w-full flex gap-5 items-center justify-start mt-4">
+              <img id="weatherIcon" class="w-14" src="" alt="" />
+              <span id="temp">34°C</span>
+            </div>
+            <div class="sm:text-xl flex gap-2">
+              <h4>Feels like <span class="feelsLike">38°C</span>.</h4>
+              <h4 class="weatherDesc capitalize">Broken Clouds.</h4>
+            </div>
+            <div class="flex gap-5 mt-5 sm:text-lg">
+              <div>
+                <h4><span class="windSpeed">5.7</span>m/s W</h4>
+                <h4>Humidity: <span class="humidity">48</span>%</h4>
+                <h4>Sunrise: <span class="sunrise">07:23</span></h4>
+              </div>
+              <div>
+                <h4><span class="atmoPressure">1005</span>hPa</h4>
+                <h4>Visibility: <span class="visibility">10</span>km</h4>
+                <h4>Sunset: <span class="sunset">07.23</span></h4>
+              </div>
+            </div>
+          </div>
+          <div class="fourDaysForcast h-full w-full sm:w-[50%]">
+            <h1 class="text-2xl font-semibold">8-day Forecast</h1>
+            <div
+              class="sm:w-[95%] bg-zinc-500 mt-5 px-4 py-2 flex items-center justify-around rounded"
+            >
+              <h1 class="cursor-pointer">Sun, Aug 18</h1>
+              <h1 class="cursor-pointer">Sun, Aug 18</h1>
+              <h1 class="cursor-pointer">Sun, Aug 18</h1>
+              <h1 class="cursor-pointer">Sun, Aug 18</h1>
+            </div>
+            <div class="flex items-center gap-2 mt-5">
+              <img class="w-14" src="/images/clear.png" alt="" />
+              <div>
+                <div class="flex gap-2">
+                  <h1>Broken Clouds.</h1>
+                  <h1>Moredrate breeze.</h1>
+                </div>
+                <h2>The high will be 34°C, the low will be 27°C.</h2>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-10">
+                <h1>6.2m/s SSW</h1>
+                <h1>1005hPa</h1>
+              </div>
+              <div class="flex gap-5">
+                <h1>Humidity: 51%</h1>
+                <h1>UV: 11</h1>
+                <h1>Dew point: 22°C</h1>
+              </div>
+            </div>
+            <div class="w-full overflow-x-auto flex flex-row mt-3 gap-5 pb-1">
+              <div class="flex flex-col justify-end">
+                <h1 class="font-bold">Temprature</h1>
+                <h1 class="font-bold">Feels Like</h1>
+              </div>
+              <div class="flex flex-col">
+                <h1 class="font-bold">Morning</h1>
+                <h1>27°C</h1>
+                <h1>27°C</h1>
+              </div>
+              <div class="flex flex-col">
+                <h1 class="font-bold">Afternoon</h1>
+                <h1>27°C</h1>
+                <h1>27°C</h1>
+              </div>
+              <div class="flex flex-col">
+                <h1 class="font-bold">Evening</h1>
+                <h1>27°C</h1>
+                <h1>27°C</h1>
+              </div>
+              <div class="flex flex-col">
+                <h1 class="font-bold">Night</h1>
+                <h1>27°C</h1>
+                <h1>27°C</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
